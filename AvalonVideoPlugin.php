@@ -94,7 +94,7 @@ class AvalonVideoPlugin extends Omeka_Plugin_AbstractPlugin
 	$urlParts = explode(':',$avalonUrl);
 	$avalon_id = end($urlParts);
 	$urlParts = explode('/',$avalonUrl);
-	$avalon_host = $urlParts[2];
+	$avalon_host = end($urlParts);
 
 ?>
 			<div id="avalon_player" style= "margin:0 auto;">
